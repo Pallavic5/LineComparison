@@ -4,7 +4,6 @@ package com.bridgelabz.linecomparison;
 compareTo methods. - Using Java compareTo method to compare 2 Lengths is
  */
 import java.util.Scanner;
-
 public class LineComparison {
 	// initialize variables
 	static double x1, x2, y1, y2, x3, x4, y3, y4;
@@ -26,7 +25,6 @@ public class LineComparison {
 		firstLengthOfLine = (int) Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 		System.out.println("Length of a Line = " + firstLengthOfLine);
 	}
-
 	// Enter the values for Second line
 	public static void secondLine() {
 		System.out.println("Enter co-ordinates for X axis for secondline");
@@ -36,13 +34,11 @@ public class LineComparison {
 		y3 = scanner.nextDouble();
 		y4 = scanner.nextDouble();
 	}
-
 	// Calculate the length of second line.
 	public static void secondLengthOfLine() {
 		secondLengthOfLine = (int) Math.sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3));
 		System.out.println("Length of a Line = " + secondLengthOfLine);
 	}
-
 	public static void compareLines() {
 		String firstString = Double.toString(firstLengthOfLine);
 		String secondString = Double.toString(secondLengthOfLine);
@@ -54,7 +50,6 @@ public class LineComparison {
 			System.out.println("Both lines are not equal");
 		}
 	}
-
 	public static void checkEqualityOfLine() {
 		String firstString = Double.toString(firstLengthOfLine);
 		String secondString = Double.toString(secondLengthOfLine);
